@@ -10,7 +10,7 @@ var app = angular.module('starter', ['ionic']);
 
 app.run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
-    <!-- console.log("run"); -->
+    console.log("run");
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs).
     // The reason we default this to hidden is that native apps don't usually show an accessory bar, at
@@ -28,3 +28,8 @@ app.run(function($ionicPlatform) {
     }
   });
 })
+
+// Route par défaut
+//app.config(function($urlRouterProvider){
+  //$urlRouterProvider.otherwise(livres/liste);
+//});

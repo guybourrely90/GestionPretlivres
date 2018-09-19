@@ -5,6 +5,6 @@ app.controller('HomeCtrl', function($scope, livreService){
   $scope.titre = "Gestion Prêt de livres";
 
   // Appel de la liste des livres
-  $scope.liste = livreService.getListeLivre();
-  console.log($scope.liste);
+  $scope.listeLivre = livreService.getListeLivre();
+  console.log($scope.listeLivre);
 });
