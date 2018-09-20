@@ -41,16 +41,11 @@
       <div class="bar bar-header bar-positive">
         <h1 class="title">{{ titre }}</h1>
       </div>
-      <ion-content>
-        <ul>
-          <li ng-repeat="livre in liste">
-            {{ livre.titre }}
-          </li>
-        </ul>
-      </ion-content>
-      <!-- <ion-list>
-        <ion-item ng-repeat="Liste des livres">{{ liste.titre }}</ion-item>
-      </ion-list> -->
+      <ion-list>
+        <ion-item ng-repeat="livre in liste">
+          {{ liste.titre }}
+        </ion-item>
+      </ion-list>
     </ion-pane>
   </body>
 </html>
