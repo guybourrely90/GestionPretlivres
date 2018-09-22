@@ -30,6 +30,6 @@ app.run(function($ionicPlatform) {
 })
 
 // Route par défaut
-//app.config(function($urlRouterProvider){
-  //$urlRouterProvider.otherwise(livres/liste);
-//});
+app.config(function($urlRouterProvider){
+  $urlRouterProvider.otherwise('livres/liste');
+});

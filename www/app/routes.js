@@ -6,4 +6,6 @@ app.config(function($stateProvider){
           templateUrl : 'templates/liste.html',
           controller : 'HomeCtrl'
     });
+
+
 });
