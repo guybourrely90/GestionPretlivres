@@ -1,6 +1,6 @@
 // Injection des services $http(Ajax), $q(promesses)
 app.service('ajaxService', function($http, $q){
-  this.getListe = function()
+  this.createLivre = function()
   {
     // Création d'un promesse
     var deferred = $q.defer();

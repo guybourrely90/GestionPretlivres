@@ -1,6 +1,22 @@
-<ion-scroll direction="y">
-  <ion-item ng-repeat="livre in listeLivre">
-    {{livre.titre}}
-  </ion-item>
-</ion-scroll>
+<ion-content>
+<!--   <div class="bar bar-header bar-positive">
+  <h1 class="title">{{titre}}</h1>
+</div> -->
+  <ion-scroll direction="y">
+    <form name="creatlivre" ng-submit="submit()">
+            <input type="text" ng-model="titreLivre" name="titre" placeholder="Titre">
+            <input type="text" ng-model="issn" name="issn" placeholder="issn">
+            <input type="text" ng-model="isbn" name="isbn" placeholder="isbn">
+            <input type="text" ng-model="edition" name="edition" placeholder="edition">
+            <input type="text" ng-model="genres" name="genres" placeholder="genres">
+            <input type="text" ng-model="synopsis" name="synopsis" placeholder="synopsis">
+<!--             <input type="text" name="date_parution" placeholder="date_parution"> -->
+            <input type="submit" value="Enregister">
+    </form>
+    <ion-item ng-repeat="livre in listeLivre">
+        {{livre.titre}}
+        {{livre.edition}}
+    </ion-item>
+  </ion-scroll>
+</ion-content>
 
